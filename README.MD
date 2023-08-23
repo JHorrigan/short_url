@@ -59,3 +59,15 @@ uvicorn shortener_app.main:app --reload
 ```
 
 The reload option will reload the server when you make changes. Remove this in production.
+
+## Query Database
+
+To query the database connected to your environment, you can use the Python interpreter to instantiate
+a database session, and run a query:
+
+```sh
+from shortener_app.database import SessionLocal
+db = SessionLocal() # Create database session
+from shortener_app.models import URL
+db.query(URL).all()
+```
