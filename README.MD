@@ -19,7 +19,7 @@ them as environment variables
 
 ## How It Works
 
-This application is supported by an API which creates and manages shortened URLs. THe main
+This application is supported by an API which creates and manages shortened URLs. The main
 purpose of the API is to receive a full target URL and return a shortened URL.
 
 When you post a target URL to the Short URL application, you get a shortened URL and a secret
@@ -49,3 +49,13 @@ They will then be loaded & cached at runtime as the application environment sett
 | env_name | ENV_NAME | Name of your current environment |
 | base_url | BASE_URL | Domain of your app |
 | db_url | DB_URL | Address of your database |
+
+## Run Application
+
+To run the application, start the uvicorn live server:
+
+```sh
+uvicorn shortener_app.main:app --reload
+```
+
+The reload option will reload the server when you make changes. Remove this in production.
