@@ -37,3 +37,15 @@ Here is a summary of the API endpoints that power Short URL:
 | /{url_key} | GET | | Forwards to your target URL |
 | /admin/{secret_key} | GET | | Shows administrative info about your shortened URL |
 | /admin/{secret_key} | DELETE | Your secret key | Deletes your shortened URL |
+
+## Environment
+
+A .env_sample file is provided. This should be renamed to .env and excluded from version control.
+You should update the environment variable placeholders in this file with you environment settings.
+They will then be loaded & cached at runtime as the application environment settings:
+
+| Settings Variable | Environment Variable | Value |
+| ------ | ------ | ------ |
+| env_name | ENV_NAME | Name of your current environment |
+| base_url | BASE_URL | Domain of your app |
+| db_url | DB_URL | Address of your database |
