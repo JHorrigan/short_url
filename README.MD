@@ -12,6 +12,10 @@ Short URL uses the following technology:
 - [FastAPI](https://fastapi.tiangolo.com) - A modern, fast web framework for building APIs
 - [Uvicorn](https://www.uvicorn.org) - An ASGI web server for Python
 - [SQLite](https://www.sqlite.org) - A small, fast & full featured SQL database engine
+- [SQLAlchemy](https://www.sqlalchemy.org) - Python SQL Toolkit & Object Relational Mapper
+- [Python-dotenv](https://pypi.org/project/python-dotenv) - Reads key-value pairs & sets
+them as environment variables
+- [Validators](https://pypi.org/project/validators) - Python Data Validation For Humans
 
 ## How It Works
 
